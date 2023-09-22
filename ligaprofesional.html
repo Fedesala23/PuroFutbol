@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puro Futbol</title>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--Css-->
+    <link rel="stylesheet" href="style.css">
+    <!--Fonts-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Barra de Navegacion-->
+    <Header>
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand-logo" href="index.html">
+                    <img src="Galeria/Logo/Logo.png" width="200px" alt="Logo Puro Futbol">
+                </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbar-toggler">
+                <a class="navbar-brand" href="index.html">
+                    <img src="Galeria/Logo/Logo.png" width="200px" alt="Logo Puro Futbol">
+                </a>
+                <ul class="navbar-nav d-flex justify-content-center align-items-center">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="ligaprofesional.html">Liga Profesional</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="clubes.html">Clubes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="noticias.html" >Noticias</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="registro.html" >Registro</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav> 
+    </Header>
+    <!--Equipos-->
+    <section class="d-flex flex-column ">
+      <div class="content-tabla-puntos">
+      <h2 class="tabla-puntos">Tabla de puntos</h2>
+      </div>
+      <div class="table-responsive">
+      <table class="tabla-zona caption-top">
+          <caption class="titulo-tabla-zona">Zona A</caption>
+          <tr class="tabla-pos">
+              <th class="tabla-pos-data">Pos</th>
+              <th class="tabla-pos-data">Equipo</th>
+              <th class="tabla-pos-data">Pts</th>
+              <th class="tabla-pos-data">PJ</th>
+              <th class="tabla-pos-data">PG</th>
+              <th class="tabla-pos-data">PE</th>
+              <th class="tabla-pos-data">PP</th>
+              <th class="tabla-pos-data">GF</th>
+              <th class="tabla-pos-data">GC</th>
+              <th class="tabla-pos-data">DIF</th>
+          </tr>
+          <tr class="tabla-clasificado">
+              <td class="tabla-clasificado-data">1</td>
+              <td class="tabla-clasificado-data"> <img class="escudo" src="Galeria/escudos/talleres.png" alt="talleres">Talleres</td>
+              <td class="tabla-clasificado-data">3</td>
+              <td class="tabla-clasificado-data">1</td>
+              <td class="tabla-clasificado-data">1</td>
+              <td class="tabla-clasificado-data">0</td>
+              <td class="tabla-clasificado-data">0</td>
+              <td class="tabla-clasificado-data">3</td>
+              <td class="tabla-clasificado-data">0</td>
+              <td class="tabla-clasificado-data">+3</td>
+          </tr>
+          <tr class="tabla-clasificado">
+              <td class="tabla-clasificado-data">2</td>
+              <td class="tabla-clasificado-data"><img class="escudo" src="Galeria/escudos/huracan.png" alt="huracan">Huracan</td>
+              <td class="tabla-clasificado-data">3</td>
+              <td class="tabla-clasificado-data">1</td>
+              <td class="tabla-clasificado-data">1</td>
+              <td class="tabla-clasificado-data">0</td>
+              <td class="tabla-clasificado-data">0</td>
+              <td class="tabla-clasificado-data">2</td>
+              <td class="tabla-clasificado-data">0</td>
+              <td class="tabla-clasificado-data">+2</td>
+          </tr>
+          <tr class="tabla-clasificado">
+              <td class="tabla-clasificado-data">3</td>
+              <td class="tabla-clasificado-data"><img class="escudo" src="Galeria/escudos/argentinos.png" alt="Argentinos">Argentinos</td>
+              <td class="tabla-clasificado-data">3</td>
+              <td class="tabla-clasificado-data">1</td>
+              <td class="tabla-clasificado-data">1</td>
+              <td class="tabla-clasificado-data">0</td>
+              <td class="tabla-clasificado-data">0</td>
+              <td class="tabla-clasificado-data">3</td>
+              <td class="tabla-clasificado-data">2</td>
+              <td class="tabla-clasificado-data">+1</td>
+          </tr>            
+          <tr class="tabla-clasificado">
+              <td class="tabla-clasificado-data">4</td>
+              <td class="tabla-clasificado-data"><img class="escudo" src="Galeria/escudos/colon.png" alt="colon">Colon</td>
+              <td class="tabla-clasificado-data">3</td>
+              <td class="tabla-clasificado-data">1</td>
+              <td class="tabla-clasificado-data">1</td>
+              <td class="tabla-clasificado-data">0</td>
+              <td class="tabla-clasificado-data">0</td>
+              <td class="tabla-clasificado-data">1</td>
+              <td class="tabla-clasificado-data">0</td>
+              <td class="tabla-clasificado-data">+1</td>
+          </tr>
+          <tr class="tabla-gris-oscuro">
+              <td class="tabla-gris-oscuro-data">5</td>
+              <td class="tabla-gris-oscuro-data"><img class="escudo" src="Galeria/escudos/instituto.png" alt="instituto">Instituto</td>
+              <td class="tabla-gris-oscuro-data">3</td>
+              <td class="tabla-gris-oscuro-data">1</td>
+              <td class="tabla-gris-oscuro-data">1</td>
+              <td class="tabla-gris-oscuro-data">0</td>
+              <td class="tabla-gris-oscuro-data">0</td>
+              <td class="tabla-gris-oscuro-data">1</td>
+              <td class="tabla-gris-oscuro-data">0</td>
+              <td class="tabla-gris-oscuro-data">+1</td>
+          </tr>
+          <tr class="tabla-gris-claro">
+              <td class="tabla-gris-claro-data">6</td>
+              <td class="tabla-gris-claro-data"><img class="escudo" src="Galeria/escudos/velez.png" alt="velez">Velez</td>
+              <td class="tabla-gris-claro-data">3</td>
+              <td class="tabla-gris-claro-data">1</td>
+              <td class="tabla-gris-claro-data">1</td>
+              <td class="tabla-gris-claro-data">0</td>
+              <td class="tabla-gris-claro-data">0</td>
+              <td class="tabla-gris-claro-data">1</td>
+              <td class="tabla-gris-claro-data">0</td>
+              <td class="tabla-gris-claro-data">+1</td>
+          </tr>
+          <tr class="tabla-gris-oscuro">
+              <td class="tabla-gris-oscuro-data">7</td>
+              <td class="tabla-gris-oscuro-data"><img class="escudo" src="Galeria/escudos/tucuman.png" alt="tucuman">Atl Tucuman</td>
+              <td class="tabla-gris-oscuro-data">1</td>
+              <td class="tabla-gris-oscuro-data">1</td>
+              <td class="tabla-gris-oscuro-data">0</td>
+              <td class="tabla-gris-oscuro-data">1</td>
+              <td class="tabla-gris-oscuro-data">0</td>
+              <td class="tabla-gris-oscuro-data">0</td>
+              <td class="tabla-gris-oscuro-data">0</td>
+              <td class="tabla-gris-oscuro-data">0</td>
+          </tr>
+          <tr class="tabla-gris-claro">
+              <td class="tabla-gris-claro-data">8</td>
+              <td class="tabla-gris-claro-data"><img class="escudo" src="Galeria/escudos/rosario.png" alt="rosario">Rosario Central</td>
+              <td class="tabla-gris-claro-data">1</td>
+              <td class="tabla-gris-claro-data">1</td>
+              <td class="tabla-gris-claro-data">0</td>
+              <td class="tabla-gris-claro-data">1</td>
+              <td class="tabla-gris-claro-data">0</td>
+              <td class="tabla-gris-claro-data">0</td>
+              <td class="tabla-gris-claro-data">0</td>
+              <td class="tabla-gris-claro-data">0</td>
+          </tr>
+          <tr class="tabla-gris-oscuro">
+              <td class="tabla-gris-oscuro-data">9</td>
+              <td class="tabla-gris-oscuro-data"> <img class="escudo" src="Galeria/escudos/river.png" alt="RiverPlate">River Plate</td>
+              <td class="tabla-gris-oscuro-data">0</td>
+              <td class="tabla-gris-oscuro-data">1</td>
+              <td class="tabla-gris-oscuro-data">0</td>
+              <td class="tabla-gris-oscuro-data">0</td>
+              <td class="tabla-gris-oscuro-data">1</td>
+              <td class="tabla-gris-oscuro-data">2</td>
+              <td class="tabla-gris-oscuro-data">3</td>
+              <td class="tabla-gris-oscuro-data">-1</td>
+          </tr>
+          <tr class="tabla-gris-claro">
+              <td class="tabla-gris-claro-data">10</td>
+              <td class="tabla-gris-claro-data"> <img class="escudo" src="Galeria/escudos/arsenal.png" alt="Arsenal">Arsenal</td>
+              <td class="tabla-gris-claro-data">0</td>
+              <td class="tabla-gris-claro-data">1</td>
+              <td class="tabla-gris-claro-data">0</td>
+              <td class="tabla-gris-claro-data">0</td>
+              <td class="tabla-gris-claro-data">1</td>
+              <td class="tabla-gris-claro-data">0</td>
+              <td class="tabla-gris-claro-data">1</td>
+              <td class="tabla-gris-claro-data">-1</td>
+          </tr>
+          <tr class="tabla-gris-oscuro">
+              <td class="tabla-gris-oscuro-data">11</td>
+              <td class="tabla-gris-oscuro-data"><img class="escudo" src="Galeria/escudos/barracas.png" alt="barracas">Barracas Central</td>
+              <td class="tabla-gris-oscuro-data">0</td>
+              <td class="tabla-gris-oscuro-data">1</td>
+              <td class="tabla-gris-oscuro-data">0</td>
+              <td class="tabla-gris-oscuro-data">0</td>
+              <td class="tabla-gris-oscuro-data">1</td>
+              <td class="tabla-gris-oscuro-data">0</td>
+              <td class="tabla-gris-oscuro-data">1</td>
+              <td class="tabla-gris-oscuro-data">-1</td>
+          </tr>
+          <tr class="tabla-gris-claro">
+              <td class="tabla-gris-claro-data">12</td>
+              <td class="tabla-gris-claro-data"><img class="escudo" src="Galeria/escudos/independiente.png" alt="independiente">Independiente</td>
+              <td class="tabla-gris-claro-data">0</td>
+              <td class="tabla-gris-claro-data">1</td>
+              <td class="tabla-gris-claro-data">0</td>
+              <td class="tabla-gris-claro-data">0</td>
+              <td class="tabla-gris-claro-data">1</td>
+              <td class="tabla-gris-claro-data">0</td>
+              <td class="tabla-gris-claro-data">1</td>
+              <td class="tabla-gris-claro-data">-1</td>
+          </tr>
+          <tr class="tabla-gris-oscuro">
+              <td class="tabla-gris-oscuro-data">13</td>
+              <td class="tabla-gris-oscuro-data"><img class="escudo" src="Galeria/escudos/banfield.png" alt="banfield">Banfield</td>
+              <td class="tabla-gris-oscuro-data">0</td>
+              <td class="tabla-gris-oscuro-data">1</td>
+              <td class="tabla-gris-oscuro-data">0</td>
+              <td class="tabla-gris-oscuro-data">0</td>
+              <td class="tabla-gris-oscuro-data">1</td>
+              <td class="tabla-gris-oscuro-data">0</td>
+              <td class="tabla-gris-oscuro-data">2</td>
+              <td class="tabla-gris-oscuro-data">-2</td>
+          </tr>
+          <tr class="tabla-gris-claro">
+              <td class="tabla-gris-claro-data-l">14</td>
+              <td class="tabla-gris-claro-data"><img class="escudo" src="Galeria/escudos/gimnasia.png" alt="gimnasia">Gimnasia (LP)</td>
+              <td class="tabla-gris-claro-data">0</td>
+              <td class="tabla-gris-claro-data">1</td>
+              <td class="tabla-gris-claro-data">0</td>
+              <td class="tabla-gris-claro-data">0</td>
+              <td class="tabla-gris-claro-data">1</td>
+              <td class="tabla-gris-claro-data">0</td>
+              <td class="tabla-gris-claro-data">3</td>
+              <td class="tabla-gris-claro-data-r">-3</td>
+          </tr>
+      </table>
+      <table class="tabla-zona caption-top">
+          <caption class="titulo-tabla-zona">Zona B</caption>
+          <tr class="tabla-pos">
+              <th class="tabla-pos-data">Pos</th>
+              <th class="tabla-pos-data">Equipo</th>
+              <th class="tabla-pos-data">Pts</th>
+              <th class="tabla-pos-data">PJ</th>
+              <th class="tabla-pos-data">PG</th>
+              <th class="tabla-pos-data">PE</th>
+              <th class="tabla-pos-data">PP</th>
+              <th class="tabla-pos-data">GF</th>
+              <th class="tabla-pos-data">GC</th>
+              <th class="tabla-pos-data">DIF</th>
+          </tr>
+          <tr class="tabla-clasificado">
+              <td class="tabla-clasificado-data">1</td>
+              <td class="tabla-clasificado-data"><img class="escudo" src="Galeria/escudos/belgrano.png" alt="belgrano">Belgrano</td>
+              <td class="tabla-clasificado-data">4</td>
+              <td class="tabla-clasificado-data">2</td>
+              <td class="tabla-clasificado-data">1</td>
+              <td class="tabla-clasificado-data">1</td>
+              <td class="tabla-clasificado-data">0</td>
+              <td class="tabla-clasificado-data">4</td>
+              <td class="tabla-clasificado-data">3</td>
+              <td class="tabla-clasificado-data">+1</td>
+          </tr>
+          <tr class="tabla-clasificado">
+              <td class="tabla-clasificado-data">2</td>
+              <td class="tabla-clasificado-data"><img class="escudo" src="Galeria/escudos/sanlorenzo.png" alt="sanlorenzo">San Lorenzo</td>
+              <td class="tabla-clasificado-data">4</td>
+              <td class="tabla-clasificado-data">2</td>
+              <td class="tabla-clasificado-data">1</td>
+              <td class="tabla-clasificado-data">1</td>
+              <td class="tabla-clasificado-data">0</td>
+              <td class="tabla-clasificado-data">3</td>
+              <td class="tabla-clasificado-data">2</td>
+              <td class="tabla-clasificado-data">+1</td>
+          </tr>
+          <tr class="tabla-clasificado">
+              <td class="tabla-clasificado-data">3</td>
+              <td class="tabla-clasificado-data"><img class="escudo" src="Galeria/escudos/boca.png" alt="boca">Boca Juniors</td>
+              <td class="tabla-clasificado-data">3</td>
+              <td class="tabla-clasificado-data">1</td>
+              <td class="tabla-clasificado-data">1</td>
+              <td class="tabla-clasificado-data">0</td>
+              <td class="tabla-clasificado-data">0</td>
+              <td class="tabla-clasificado-data">3</td>
+              <td class="tabla-clasificado-data">1</td>
+              <td class="tabla-clasificado-data">+2</td>
+          </tr>            
+          <tr class="tabla-clasificado">
+              <td class="tabla-clasificado-data">4</td>
+              <td class="tabla-clasificado-data"><img class="escudo" src="Galeria/escudos/newells.png" alt="newells">Newells</td>
+              <td class="tabla-clasificado-data">3</td>
+              <td class="tabla-clasificado-data">1</td>
+              <td class="tabla-clasificado-data">1</td>
+              <td class="tabla-clasificado-data">0</td>
+              <td class="tabla-clasificado-data">0</td>
+              <td class="tabla-clasificado-data">2</td>
+              <td class="tabla-clasificado-data">0</td>
+              <td class="tabla-clasificado-data">+2</td>
+          </tr>
+          <tr class="tabla-gris-oscuro">
+              <td class="tabla-gris-oscuro-data">5</td>
+              <td class="tabla-gris-oscuro-data"><img class="escudo" src="Galeria/escudos/sarmiento.png" alt="sarmiento">Sarmiento</td>
+              <td class="tabla-gris-oscuro-data">3</td>
+              <td class="tabla-gris-oscuro-data">1</td>
+              <td class="tabla-gris-oscuro-data">1</td>
+              <td class="tabla-gris-oscuro-data">0</td>
+              <td class="tabla-gris-oscuro-data">0</td>
+              <td class="tabla-gris-oscuro-data">2</td>
+              <td class="tabla-gris-oscuro-data">0</td>
+              <td class="tabla-gris-oscuro-data">+2</td>
+          </tr>
+          <tr class="tabla-gris-claro">
+              <td class="tabla-gris-claro-data">6</td>
+              <td class="tabla-gris-claro-data"><img class="escudo" src="Galeria/escudos/union.png" alt="union">Union</td>
+              <td class="tabla-gris-claro-data">2</td>
+              <td class="tabla-gris-claro-data">2</td>
+              <td class="tabla-gris-claro-data">0</td>
+              <td class="tabla-gris-claro-data">2</td>
+              <td class="tabla-gris-claro-data">0</td>
+              <td class="tabla-gris-claro-data">1</td>
+              <td class="tabla-gris-claro-data">1</td>
+              <td class="tabla-gris-claro-data">0</td>
+          </tr>
+          <tr class="tabla-gris-oscuro">
+              <td class="tabla-gris-oscuro-data">7</td>
+              <td class="tabla-gris-oscuro-data"><img class="escudo" src="Galeria/escudos/racing.png" alt="racing">Racing Club</td>
+              <td class="tabla-gris-oscuro-data">1</td>
+              <td class="tabla-gris-oscuro-data">1</td>
+              <td class="tabla-gris-oscuro-data">0</td>
+              <td class="tabla-gris-oscuro-data">1</td>
+              <td class="tabla-gris-oscuro-data">0</td>
+              <td class="tabla-gris-oscuro-data">1</td>
+              <td class="tabla-gris-oscuro-data">1</td>
+              <td class="tabla-gris-oscuro-data">0</td>
+          </tr>
+          <tr class="tabla-gris-claro">
+              <td class="tabla-gris-claro-data">8</td>
+              <td class="tabla-gris-claro-data"><img class="escudo" src="Galeria/escudos/estudiantes.png" alt="estudiantes">Estudiantes</td>
+              <td class="tabla-gris-claro-data">1</td>
+              <td class="tabla-gris-claro-data">2</td>
+              <td class="tabla-gris-claro-data">0</td>
+              <td class="tabla-gris-claro-data">1</td>
+              <td class="tabla-gris-claro-data">1</td>
+              <td class="tabla-gris-claro-data">1</td>
+              <td class="tabla-gris-claro-data">2</td>
+              <td class="tabla-gris-claro-data">-1</td>
+          </tr>
+          <tr class="tabla-gris-oscuro">
+              <td class="tabla-gris-oscuro-data">9</td>
+              <td class="tabla-gris-oscuro-data"><img class="escudo" src="Galeria/escudos/dyf.png" alt="defyjusticia">Def y Justicia</td>
+              <td class="tabla-gris-oscuro-data">0</td>
+              <td class="tabla-gris-oscuro-data">0</td>
+              <td class="tabla-gris-oscuro-data">0</td>
+              <td class="tabla-gris-oscuro-data">0</td>
+              <td class="tabla-gris-oscuro-data">0</td>
+              <td class="tabla-gris-oscuro-data">0</td>
+              <td class="tabla-gris-oscuro-data">0</td>
+              <td class="tabla-gris-oscuro-data">0</td>
+          </tr>
+          <tr class="tabla-gris-claro">
+              <td class="tabla-gris-claro-data">10</td>
+              <td class="tabla-gris-claro-data"><img class="escudo" src="Galeria/escudos/godoy.png" alt="godoy">Godoy Cruz</td>
+              <td class="tabla-gris-claro-data">0</td>
+              <td class="tabla-gris-claro-data">0</td>
+              <td class="tabla-gris-claro-data">0</td>
+              <td class="tabla-gris-claro-data">0</td>
+              <td class="tabla-gris-claro-data">0</td>
+              <td class="tabla-gris-claro-data">0</td>
+              <td class="tabla-gris-claro-data">0</td>
+              <td class="tabla-gris-claro-data">0</td>
+          </tr>
+          <tr class="tabla-gris-oscuro">
+              <td class="tabla-gris-oscuro-data">11</td>
+              <td class="tabla-gris-oscuro-data"><img class="escudo" src="Galeria/escudos/lanus.png" alt="lanus">Lanus</td>
+              <td class="tabla-gris-oscuro-data">0</td>
+              <td class="tabla-gris-oscuro-data">1</td>
+              <td class="tabla-gris-oscuro-data">0</td>
+              <td class="tabla-gris-oscuro-data">0</td>
+              <td class="tabla-gris-oscuro-data">1</td>
+              <td class="tabla-gris-oscuro-data">0</td>
+              <td class="tabla-gris-oscuro-data">1</td>
+              <td class="tabla-gris-oscuro-data">-1</td>
+          </tr>
+          <tr class="tabla-gris-claro">
+              <td class="tabla-gris-claro-data">12</td>
+              <td class="tabla-gris-claro-data"><img class="escudo" src="Galeria/escudos/platense.png" alt="platense">Platense</td>
+              <td class="tabla-gris-claro-data">0</td>
+              <td class="tabla-gris-claro-data">1</td>
+              <td class="tabla-gris-claro-data">0</td>
+              <td class="tabla-gris-claro-data">0</td>
+              <td class="tabla-gris-claro-data">1</td>
+              <td class="tabla-gris-claro-data">1</td>
+              <td class="tabla-gris-claro-data">3</td>
+              <td class="tabla-gris-claro-data">-2</td>
+          </tr>
+          <tr class="tabla-gris-oscuro">
+              <td class="tabla-gris-oscuro-data">13</td>
+              <td class="tabla-gris-oscuro-data"><img class="escudo" src="Galeria/escudos/centralcordoba.png" alt="centralcordoba">Central Cordoba</td>
+              <td class="tabla-gris-oscuro-data">0</td>
+              <td class="tabla-gris-oscuro-data">1</td>
+              <td class="tabla-gris-oscuro-data">0</td>
+              <td class="tabla-gris-oscuro-data">0</td>
+              <td class="tabla-gris-oscuro-data">1</td>
+              <td class="tabla-gris-oscuro-data">0</td>
+              <td class="tabla-gris-oscuro-data">2</td>
+              <td class="tabla-gris-oscuro-data">-2</td>
+          </tr>
+          <tr class="tabla-gris-claro">
+              <td class="tabla-gris-claro-data-l">14</td>
+              <td class="tabla-gris-claro-data"><img class="escudo" src="Galeria/escudos/tigre.png" alt="tigre">Tigre</td>
+              <td class="tabla-gris-claro-data">0</td>
+              <td class="tabla-gris-claro-data">1</td>
+              <td class="tabla-gris-claro-data">0</td>
+              <td class="tabla-gris-claro-data">0</td>
+              <td class="tabla-gris-claro-data">1</td>
+              <td class="tabla-gris-claro-data">0</td>
+              <td class="tabla-gris-claro-data">2</td>
+              <td class="tabla-gris-claro-data-r">-2</td>
+          </tr>
+      </table>
+    </div>
+      <p class="aclaracion"><b>Los primeros 4 de cada zona clasifican a la fase final</b> </p>
+  </section>
+  <!--Footer-->
+    <footer class="footer">
+      <ul class="list-footer">
+          <li>Puro Fútbol</li>
+          <li>Legal - Privacidad</li>
+          <li>2023</li>
+      </ul>
+  </footer>
+    <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
