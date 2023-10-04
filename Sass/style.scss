@@ -1,0 +1,369 @@
+/*Variables*/
+
+$color-principal-rojo: rgb(194, 50, 50);
+$color-principal-rojo-oscuro: rgb(184, 40, 40);
+$color-secundario-blanco: rgb(214, 214, 214);
+$fuente-titulo-subtitulo: 'Gabarito', cursive;
+
+/*Estilos body*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    background-color: rgb(34, 33, 33);
+}
+
+/*Barra de Navegacion*/
+
+.content-nav {
+    flex-direction: column;
+    border-bottom: solid $color-principal-rojo;
+    @media (max-width: 768px){
+        display: flex;
+        flex-direction: row;
+        background-color: $color-principal-rojo;
+    }
+    .navbar-brand-logo {
+        font-family: 'Kalam', cursive;
+        text-decoration: none;
+        color: $color-secundario-blanco;
+        @media (max-width: 768px){
+            font-family: 'Kalam', cursive;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            margin-top: 5px;
+        }
+    }
+    .content-list {
+        font-size: 1.3em;
+        width: 100%;
+        padding-top: 2px;
+        font-family: $fuente-titulo-subtitulo;
+        @media (max-width:768px) {
+            border-top: solid rgb(0, 0, 0) 1px;
+        }
+        .nav-link {
+            color: $color-secundario-blanco;
+            &:hover {
+                background: $color-principal-rojo;
+                border-radius: 10px 10px 0 0;
+            }
+        @media (max-width:768px){
+            color: rgb(0, 0, 0);
+            &:hover {
+                background: rgba(255, 255, 255, 0);
+            }
+        }
+        }
+    }
+}
+
+/*Partido del Dia*/
+
+.content-partido-del-dia {
+    font-family: $fuente-titulo-subtitulo;
+    text-align: center;
+    .partido-del-dia {
+        color: $color-secundario-blanco;
+        border-radius: 10px;
+        font-size: 32px;
+    }
+}
+
+.content-tabla-partido-del-dia {
+    display: flex;
+    justify-content: center;
+    @media (max-width: 768px){
+        padding: 2em;
+    }
+    .nombre-tabla {
+        text-align: center;
+        font-size: 20px;
+        background-color: $color-principal-rojo;
+        color: $color-secundario-blanco;
+        border-radius: 5px 5px 0 0;
+        @media (max-width: 768px){
+            font-size: 18px;
+            padding: 3px;
+        }
+    }
+    .equipo {
+        font-size: 18px;
+        background-color: $color-secundario-blanco;
+        padding: 8px 20px;
+        border-bottom: solid;
+        border-color: rgb(190, 190, 190);
+        @media (max-width: 768px){
+            font-size: 16px;
+            padding: 4px 16px;
+        }
+        .escudo {
+            width: 23px;
+            @media (max-width: 768px){
+                width: 20px;
+            }
+        }
+    }
+    .horario {
+        font-size: 15px;
+        background-color: rgb(64, 65, 65);
+        padding: 8px 20px;
+        color: $color-secundario-blanco;
+        @media (max-width: 768px){
+            font-size: 15px;
+            padding: 4px 16px;
+        }
+    }
+    .resultado {
+        font-size: 20px;
+        background-color: $color-secundario-blanco;
+        padding: 8px 20px;
+        border-bottom: solid;
+        border-color: rgb(190, 190, 190);
+        @media (max-width: 768px){
+            font-size: 16px;
+            padding: 4px 16px;
+        }
+    }
+}
+
+/* Noticias del día */
+
+.noticias-dia {
+    font-family: $fuente-titulo-subtitulo;
+    background-color: $color-principal-rojo;
+    padding: 20px;
+    color: $color-secundario-blanco;
+    @media (max-width:768px){
+        margin-top: 30px;
+        background-color: $color-principal-rojo;
+        text-align: center;
+    }
+}
+
+.noticias-content img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.noticias-contenedor {
+    margin: 20px;
+    padding: 0 20px;
+    .noticia {
+        position: relative;
+        color: $color-secundario-blanco;
+        margin: 10px;
+    }
+    h3 {
+        font-family: $fuente-titulo-subtitulo;
+        color: $color-secundario-blanco;
+    }
+}
+
+/*Footer*/
+
+.footer {
+    margin: 10px 0 0 0;
+    padding: 10px;
+    background-color: $color-principal-rojo-oscuro;
+    font-weight: bold;
+    color: $color-secundario-blanco;
+    position: relative;
+    bottom: -110px;
+    .list-footer {
+        text-align: center;
+        list-style: none;
+        margin: 0;
+        .m-2 {
+            text-decoration: none;
+            color: $color-secundario-blanco;
+        }
+    }
+}
+
+/* Tabla Posiciones */
+
+.tabla-puntos {
+    font-family: $fuente-titulo-subtitulo;
+    text-align: center;
+    background-color: $color-principal-rojo-oscuro;
+    color: $color-secundario-blanco;
+}
+
+.titulo-tabla-zona {
+    font-size: 20px;
+    background-color: $color-principal-rojo-oscuro;
+    padding: 4px;
+    color: $color-secundario-blanco;
+    font-family: $fuente-titulo-subtitulo;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+    @media (max-width: 768px){
+        font-size: 20px;
+        padding: 6px 4px;
+    }
+}
+
+.tabla-pos .tabla-pos-data {
+    background-color: rgb(112, 20, 20);
+    color: $color-secundario-blanco;
+    font-family: $fuente-titulo-subtitulo;
+    text-align: center;
+    padding: 10px 5px;
+    @media (max-width: 768px){
+        padding: 6px 4px;
+    }
+}
+
+.tabla-clasificado {
+    background-color: rgb(36, 197, 58);
+    text-align: center;
+    .tabla-clasificado-data {
+        padding: 7px;
+        border-bottom: solid rgb(29, 175, 48);
+        @media (max-width: 768px){
+            padding: 4px;
+        }
+    }
+}
+
+.tabla-gris-oscuro {
+    background-color: rgb(143, 142, 142);
+    text-align: center;
+    .tabla-gris-oscuro-data {
+        padding: 7px;
+        border-bottom: solid;
+        border-color: rgba(100, 100, 100, 0.671);
+        @media (max-width: 768px) {
+            padding: 4px;
+        }
+    }
+}
+
+.tabla-gris-claro {
+    background-color: $color-secundario-blanco;
+    text-align: center;
+    .tabla-gris-claro-data {
+        padding: 7px;
+        border-bottom: solid;
+        border-color: rgba(204, 204, 204, 0.671);
+        @media (max-width: 768px){
+            padding: 4px;
+        }
+    }
+}
+
+.aclaracion {
+    text-align: center;
+    color: $color-secundario-blanco;
+}
+
+.escudo {
+    margin: 0 3px;
+}
+
+/* Clubes */
+
+.content-clubes {
+    font-family: $fuente-titulo-subtitulo;
+    text-align: center;
+    margin-top: 15px;
+    background-color: $color-principal-rojo-oscuro;
+    .clubes {
+        font-size: 32px;
+        color: $color-secundario-blanco;
+    }
+}
+
+.content-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .content {
+        background-color: rgb(134, 134, 134);
+        border-radius: 10px;
+        padding: 19px;
+        margin: 10px;
+        width: 410px;
+        .nombre-club {
+            font-size: 1.6em;
+            text-align: center;
+            font-family: $fuente-titulo-subtitulo;
+        }
+        .content-escudo {
+            display: flex;
+            justify-content: center;
+            .escudo-grande {
+                width: 120px;
+            }
+        }
+        .info-club {
+            font-size: 16px;
+        }
+        .estadio {
+            width: 18em;
+            height: 12em;
+        }
+    }
+}
+
+/* Registro */
+
+.registro {
+    text-align: center;
+    background-color: rgb(177, 179, 179);
+    border-radius: 10px;
+    margin-bottom: 310PX;
+    .crea-cuenta {
+        font-family: $fuente-titulo-subtitulo;
+        font-size: 30px;
+        padding: 15px;
+        background-color: $color-principal-rojo-oscuro;
+        font-style: italic;
+        border-bottom: solid;
+        color: $color-secundario-blanco;
+        border-radius: 10px 10px 0 0;
+    }
+    .palabras-registro {
+        display: block;
+        font-size: 18px;
+        color: rgb(134, 7, 7);
+        margin: 10px 0;
+    }
+    .caja-registro {
+        padding: 4px 0;
+        border: solid 1px;
+        border-radius: 5px;
+        border-color: rgb(134, 7, 7);
+    }
+    .boton-registro {
+        font-size: 20px;
+        background-color: rgb(134, 7, 7);
+        color: $color-secundario-blanco;
+        padding: 8px;
+        border-radius: 20px;
+        border: 0;
+        margin: 20px 0;
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+    .navbar-toggler {
+        border: none;
+    }
+
+    /*Paritdos del dia*/
+    
+    .partido-del-dia {
+        font-size: 28px;
+    }
+}
